@@ -1,0 +1,244 @@
+/* Reset e Configurações Básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-yellow: #ffc800;
+    --secondary-gray: #84806c;
+    --light-background: #f5f5ef;
+    --dark-text: #1a1a1a;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--light-background);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-yellow);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--secondary-gray);
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-yellow);
+}
+
+/* Hero Section */
+main {
+    display: flex;
+    align-items: center;
+    padding: 50px 5%;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: var(--dark-text);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    color: var(--secondary-gray);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#email-form {
+    display: flex;
+    gap: 10px;
+}
+
+#email-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid var(--secondary-gray);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+#email-form button {
+    background-color: var(--primary-yellow);
+    color: var(--dark-text);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#email-form button:hover {
+    background-color: #ffdc33;
+    transform: scale(1.05);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.phone-placeholder {
+    width: 250px;
+    height: 500px;
+    background-color: var(--secondary-gray);
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Features Section */
+#features {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: white;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: var(--dark-text);
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    color: var(--secondary-gray);
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: var(--light-background);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(132, 128, 108, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(26, 26, 26, 0.05);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.feature-card h3 {
+    color: var(--dark-text);
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: var(--secondary-gray);
+}
+
+/* Call to Action */
+#download {
+    background-color: var(--primary-yellow);
+    color: var(--dark-text);
+    text-align: center;
+    padding: 80px 5%;
+}
+
+#download h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#download p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: rgba(26, 26, 26, 0.8);
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-buttons button {
+    background-color: var(--dark-text);
+    color: var(--primary-yellow);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-buttons button:hover {
+    background-color: rgba(26, 26, 26, 0.9);
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: var(--light-background);
+    text-align: center;
+    padding: 20px;
+    color: var(--secondary-gray);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero-content,
+    .features-grid {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+}
