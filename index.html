@@ -11,10 +11,10 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">FitEmCasa</div>
+        <div class="logo" aria-label="Logo FitEmCasa">FitEmCasa</div>
         <nav>
-            <a href="#features">Recursos</a>
-            <a href="#download">Baixar</a>
+            <a href="#features" aria-label="Recursos">Recursos</a>
+            <a href="#download" aria-label="Baixar o app">Baixar</a>
         </nav>
     </header>
 
@@ -26,13 +26,42 @@
                 <p>Treine quando e onde quiser, sem precisar de academia ou equipamentos.</p>
 
                 <form id="email-form">
-                    <input type="email" id="email-input" placeholder="Seu melhor email" required>
-                    <button type="submit">Começar</button>
+                    <input type="email" id="email-input" placeholder="Seu melhor email" required
+                        aria-label="Digite seu email">
+                    <button type="submit" aria-label="Iniciar">Começar</button>
                 </form>
             </div>
-
-            <div class="hero-image">
-                <div class="phone-placeholder"></div>
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="phone-notch"></div>
+                        <div class="phone-content">
+                            <div class="app-header">
+                                <div class="app-time">9:41</div>
+                                <div class="app-icons">
+                                    <span>⏚</span>
+                                    <span>📶</span>
+                                    <span>🔋</span>
+                                </div>
+                            </div>
+                            <div class="app-screen">
+                                <div class="app-logo">FitEmCasa</div>
+                                <div class="app-hero">
+                                    <h2>Seu Treino, Seu Ritmo</h2>
+                                    <div class="app-buttons">
+                                        <button>Começar</button>
+                                        <button>Ver Planos</button>
+                                    </div>
+                                </div>
+                                <div class="app-features">
+                                    <div class="feature">🎥 Vídeos Guiados</div>
+                                    <div class="feature">📋 Planos Personalizados</div>
+                                    <div class="feature">💪 Treinos Exclusivos</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -43,20 +72,17 @@
             <h2>Como Funciona</h2>
             <p>Um aplicativo completo que transforma qualquer espaço em sua academia pessoal.</p>
         </div>
-
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon video-icon"></div>
                 <h3>Vídeos Guiados</h3>
                 <p>Treinamentos em vídeo com instrutores profissionais para todos os níveis.</p>
             </div>
-
             <div class="feature-card">
                 <div class="feature-icon plan-icon"></div>
                 <h3>Planos Personalizados</h3>
                 <p>Treinos adaptados aos seus objetivos e condição física.</p>
             </div>
-
             <div class="feature-card">
                 <div class="feature-icon workout-icon"></div>
                 <h3>Sem Equipamentos</h3>
