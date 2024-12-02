@@ -53,6 +53,7 @@ main {
 }
 
 .hero-content {
+    padding: 0 10%;
     display: flex;
     align-items: center;
     gap: 50px;
@@ -347,7 +348,8 @@ footer {
     nav {
         margin-top: 15px;
     }
-    .phone-mockup{
+
+    .phone-mockup {
         display: flex;
         justify-content: center;
     }
