@@ -347,4 +347,8 @@ footer {
     nav {
         margin-top: 15px;
     }
+    .phone-mockup{
+        display: flex;
+        justify-content: center;
+    }
 }
